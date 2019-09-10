@@ -1,0 +1,27 @@
+{
+  "name": "redux-examples",
+  "version": "1.0.0",
+  "description": "Read the descriptions for every example on the [Examples](../docs/introduction/Examples.md) documentation page.",
+  "license": "MIT",
+  "homepage": "http://redux.js.org",
+  "repository": "github:reduxjs/examples",
+  "bugs": "https://github.com/reduxjs/examples/issues",
+  "author": "Tim Dorr <npm@timdorr.com>",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "cross-env CI=true babel-node test.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^5.2.1",
+    "eslint": "^6.3.0",
+    "eslint-config-react-app": "^5.0.1",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  }
+}

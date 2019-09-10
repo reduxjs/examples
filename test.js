@@ -15,7 +15,8 @@ const exampleDirs = fs.readdirSync(__dirname).filter(file => {
 const cmdArgs = [{ cmd: 'npm', args: ['ci'] }, { cmd: 'npm', args: ['test'] }]
 
 for (const dir of exampleDirs) {
-  if (dir === 'counter-vanilla' || dir === 'universal') continue
+  if (['.git', 'counter-vanilla', 'node_modules', 'universal'].includes(dir))
+    continue
 
   console.log(chalk.bold.yellow('\n\n==> Testing %s...\n\n'), dir)
   for (const cmdArg of cmdArgs) {
